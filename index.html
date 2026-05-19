@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koffin - Café de Especialidad</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 1. HEADER Y NAVEGACIÓN -->
+    <header class="main-header">
+        <div class="logo-container">
+            <!-- El fondo negro del header camuflará el fondo de tu logo -->
+            <img src="assets/logo.png" alt="Koffin Logo" class="logo-img">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#resenas">Reseñas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- 2. INICIO  -->
+        <section id="inicio" class="hero-section">
+            <div class="hero-content">
+                <p class="tagline">"Cafecito de especialidad, buena onda y lindos momentos :)"</p>
+                <a href="https://instagram.com/somoskoffin" target="_blank" class="btn-instagram">Visita nuestro Instagram</a>
+            </div>
+        </section>
+        <!-- 3. MENÚ -->
+        <section id="menu" class="menu-section">
+            <h2 class="section-title">Nuestro Menú</h2>
+            
+            <div class="menu-alert">
+                <p><strong>GRANO EN TOLVA:</strong> Actualmente usamos un café BRASIL PREMIUM con notas claras a chocolate amargo, almendra, nueces y maní.</p>
+                <small>Elegí el café que más te guste con leche entera, descremada o vegetal.</small>
+            </div>
+            <div class="products-container">
+                <!-- Categoría: Calientes -->
+                <div class="product-card">
+                    <h3>Calientes</h3>
+                    <ul>
+                        <li><strong>Espresso</strong></li>
+                        <li><strong>Cortado / Cortado Doble</strong></li>
+                        <li><strong>Magic Coffee</strong></li>
+                        <li><strong>Long Black</strong></li>
+                        <li><strong>Doppio</strong></li>
+                        <li><strong>Cappuccino</strong></li>
+                        <li><strong>Flat White</strong></li>
+                        <li><strong>Mocaccino</strong></li>
+                        <li><strong>Americano</strong></li>
+                        <li><strong>Latte</strong></li>
+                        <li><strong>Leche</strong></li>
+                        <li><strong>Chocolate</strong></li>
+                    </ul>
+                </div>
+
+                <!-- Categoría: Fríos -->
+                <div class="product-card">
+                    <h3>Fríos</h3>
+                    <ul>
+                        <li><strong>Iced Americano</strong></li>
+                        <li><strong>Iced Latte</strong></li>
+                        <li><strong>Cold Brew</strong></li>
+                        <li><strong>Iced Flat White</strong></li>
+                    </ul>
+                </div>
+
+                <!-- Categoría: Tés -->
+                <div class="product-card">
+                    <h3>Tés Orgánicos</h3>
+                    <ul>
+                        <li><strong>English Breakfast:</strong> Negro orgánico con ceylon y kenya.</li>
+                        <li><strong>Blue Earl Grey:</strong> Negro orgánico con bergamota.</li>
+                        <li><strong>Be Sweet:</strong> Infusión sin teína de rooibos y vainilla.</li>
+                        <li><strong>Orange Green Love:</strong> Verde con manzanilla y cáscaras.</li>
+                        <li><strong>Buena Vibra Chai:</strong> Negro pu erh, canela y jengibre.</li>
+                        <li><strong>Matcha:</strong> Verde de Japón, Yuzu cítrico y limón.</li>
+                    </ul>
+                </div>
+                <!-- Categoría: Extras -->
+                <div class="product-card">
+                    <h3>Extras</h3>
+                    <ul>
+                        <li>Extra Shot</li>
+                        <li>Leche Vegetal (Coco/Almendra)</li>
+                        <li>Extra Syrup (Vainilla / Latte / Caramel)</li>
+                    </ul>
+                </div>
+                <!-- Categoría: Bebidas -->
+                <div class="product-card">
+                    <h3>Bebidas</h3>
+                    <ul>
+                        <li><strong>Espresso Tonic</strong></li>
+                        <li><strong>Limonada Koffin:</strong> Limón, menta y jengibre.</li>
+                        <li><strong>Exprimido de Naranja</strong></li>
+                        <li><strong>Gaseosa / Agua</strong></li>
+                    </ul>
+                </div>
+                <!-- Categoría: Bakery -->
+                <div class="product-card">
+                    <h3>Bakery</h3>
+                    <ul>
+                        <li><strong>Cookies (Chips / Pistacho / Red Velvet / Brownie)</strong></li>
+                        <li><strong>Cuadrado de Limón</strong></li>
+                        <li><strong>Alfajor de Nuez con Dulce de Leche</strong></li>
+                        <li><strong>Carrot Cake / Brownie con Nuez</strong></li>
+                        <li><strong>Chipa / Scon de Queso / Roll de Canela</strong></li>
+                        <li><strong>Medialuna / Croissant</strong></li>
+                    </ul>
+                </div>
+                <!-- Categoría: Entre Panes -->
+                <div class="product-card">
+                    <h3>Entre Panes</h3>
+                    <ul>
+                        <li><strong>Sandwich Koffin:</strong> Masa madre, jamón crudo, queso brie, duraznos frescos y verdes.</li>
+                        <li><strong>Avocado Toast:</strong> Palta, queso confitado, cebollas encurtidas, garrapiñada y pico de gallo.</li>
+                        <li><strong>Avocado Koffin:</strong> Hummus, palta, tomates en conserva y kale (huevo opcional).</li>
+                        <li><strong>Tostadas:</strong> Masa madre, mermelada casera y queso crema.</li>
+                        <li><strong>Sandwiches:</strong> Lomito y queso / 4 quesos (tybo, gruyere, mozzarella y cheddar).</li>
+                        <li><strong>Croissant o Medialuna rellena de lomito y queso</strong></li>
+                    </ul>
+                </div>
+                <!-- Categoría: Brunch -->
+                <div class="product-card highlighted">
+                    <h3>Brunch!</h3>
+                    <ul>
+                        <li><strong>Para 2:</strong> 2 Cafés, 1 Bakery a elección, Avocado Toast/Koffin, 2 Exprimidos chicos.</li>
+                        <li><strong>Para 4:</strong> 4 Cafés, 2 Bakery, 1 Sandwich, 1 Avocado Toast/Koffin, 4 Exprimidos chicos.</li>
+                    </ul>
+                </div>
+                <!-- Categoría: Fit -->
+                 <div class="product-card">
+                    <h3>Fit</h3>
+                    <ul>
+                        <li><strong>Yogurt de Búfala:</strong> Sin azúcar, granola, frutas y miel.</li>
+                        <li><strong>Pancakes Fitness:</strong> Avena, claras, banana y frutas.</li>
+                    </ul>
+                 </div> 
+                <!-- Categoría: Store -->
+                <div class="product-card store-card">
+                    <h3>Koffin Store</h3>
+                    <span class="badge">Próximamente</span>
+                    <ul>
+                        <li>Cuarto de Café</li>
+                        <li>Hoodie / Remera / Tote Bag</li>
+                        <li>Tazas (Espresso / Flat / Latte)</li>
+                    </ul>
+                    <small class="box-notice">Consultar en caja</small>
+                </div>
+            </div>
+        </section>
+        <!-- 4. RESEÑAS (CSS Grid) -->
+        <section id="resenas" class="reviews-section">
+            <h2 class="section-title">Opiniones de Google</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <p class="stars">⭐⭐⭐⭐⭐</p>
+                    <p>"El ambiente muy lindo. Fui con mi perro y fueron súper amables. El café riquísimo y la carta tire muchas opciones, desde alternativas más fit como yogurt con frutas de estación y granola, a alternativas más clásicas como avocado toast. Una gran incorporación al barrio! Definitivamente vamos a volver."</p>
+                    <h4>- Nicolas Rodriguez.</h4>
+                </div>
+                <div class="review-card">
+                    <p class="stars">⭐⭐⭐⭐⭐</p>
+                    <p>"Obscenas y riquísimas las porciones. Muy cálido el lugar y los precios están muuuy bien dada la buena calidad y cantidad de lo que ofrecen. Confirmo que voy a volver y que se convierte en un lugar fav del barrio."</p>
+                    <h4>- Barbi Gerosa.</h4>
+                </div>
+                <div class="review-card">
+                    <p class="stars">⭐⭐⭐⭐⭐</p>
+                    <p>"Excelente café y ambiente. La carta es súper completa con muchas opciones. Gran apertura en Florida Oeste !!!"</p>
+                    <h4>- Eloy DuckardT</h4>
+                </div>
+                <div class="review-card">
+                    <p class="stars">⭐⭐⭐⭐⭐</p>
+                    <p>"Cumple con todo lo que se espera de un café de especialidad. Muy rica la preparación, la carta es clara y buen diseño. Todo es rico, decepciona ni el café ni la comida. El ambiente también es lindo, el diseño del lugar, es cálido y música ambiente para relajar disfrutando de la bebida. La atención también es de destacar. El precio me pareció bien, acorde al lugar y calidad de producto."</p>
+                    <h4>- Adrián González</h4>
+                </div>
+                <div class="review-card">
+                    <p class="stars">⭐⭐⭐⭐⭐</p>
+                    <p>"Buena atención, muy rica la comida. Buen café. Me dieron agua para mí perro sin que la pida. Gracias por ser atentos en eso. Recomiendo por estar en la zona ya que no hay muchas opciones de café. El brownie con nuez excelente un 11"</p>
+                    <h4>- Erika G Ledesma</h4>
+                </div>
+                <div class="review-card">
+                    <p class="stars">⭐⭐⭐⭐⭐</p>
+                    <p>"Excelente experiencia!! El café uno de los mejores que haya probado en Argentina el expreso, te deja un sabor muy agradable en la boca no amarga, me recordó muchísimo al que sirven en los establecimientos en Italia. Calentaron un toque el roll de canela, de esa manera viene como recién hecho, realmente muy bueno! El servicio perfecto, muy atentos y amables. No hay lugares como este en San Martin, ya era hora! Y, lo que para mí personalmente lo destaca por mucho de TODO Buenos Aires, es que es PET FRIENDLY!!!  Aún no hiciste tu pedido que tu compañero de 4 patas 🐾 , ya le traen su agüita 😁"</p>
+                    <h4>- Marie Castillejos</h4>
+                </div>
+                <div class="review-card">
+                    <p class="stars">⭐⭐⭐⭐⭐</p>
+                    <p>"Muy recomendado. Hermoso café de especialidad, pedí latte con pancakes de avena, frutas de estación y miel. Todo muy casero, rico y abundante. Lo que destaco también es la flexibilidad, ya que solicité que la miel viniera aparte y no hubo ningún problema. La medialuna la probé y fue alucinante, la calientan quedando crocante por fuera y húmeda por dentro. Volveré sin dudas a probar más cosas. Buena relación precio calidad. ¡Sigan así!"</p>
+                    <h4>- Ivana Soledad Ortega.</h4>
+                </div>
+            </div>
+        </section>
+        <!-- 5. CONTACTO Y SUCURSALES -->
+        <section id="contacto" class="contact-section">
+            <h2 class="section-title">Escribinos o Visitanos</h2>
+            <div class="contact-container">
+                <!-- Formulario -->
+                <form action="https://formspree.io/f/xvzyokvg" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="name" required placeholder="Tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="message" rows="5" required placeholder="Deja tu mensaje"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar Mensaje</button>
+                </form>
+
+                <!-- Mapa -->
+                <div class="contact-media">
+                    <h3>Nuestras Sucursales</h3>
+                    <div class="sucursales-flex">
+                        <!-- Sucursal 1 -->
+                        <div class="sucursal-card">
+                            <h4>Sucursal - San Martín</h4>
+                            <p>📍 L.N. Alem. 3601</p>
+                            <div class="iframe-container">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.545475039088!2d-58.55333892339997!3d-34.565061955459235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb70000cdcc0b%3A0xc84f98fbaa9d19f7!2sKoffin%20Coffee%20House!5e0!3m2!1sen!2sar!4v1779132196015!5m2!1sen!2sar" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                        <!-- Sucursal 2 -->
+                        <div class="sucursal-card">
+                            <h4>Sucursal - Florida Oeste</h4>
+                            <p>📍 Gral. San José de San Martín 3670</p>
+                            <div class="iframe-container">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.6582062557795!2d-58.51254352340119!3d-34.536886553973304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb70074447ff1%3A0x4d946537bc860996!2sKoffin%20Coffe%20House%20-%20Florida%20Oeste!5e0!3m2!1sen!2sar!4v1779132140353!5m2!1sen!2sar%22" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- 6. FOOTER -->
+    <footer class="main-footer">
+        <p>&copy; 2026 Koffin - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

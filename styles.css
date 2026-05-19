@@ -1,0 +1,382 @@
+/* --- RESET GENERAL --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #2c3e50;
+    background-color: #fcfcfc;
+    line-height: 1.6;
+}
+
+/* --- ELEMENTOS DE DISEÑO INTERNOS --- */
+.section-title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    color: #000000;
+}
+
+/* --- HEADER --- */
+.main-header {
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 60px; 
+    width: auto;
+    object-fit: contain;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #52796f;
+}
+
+/* --- HERO SECTION  --- */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('assets/coffee.jpg') no-repeat center center/cover;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 1.5rem;
+}
+
+.hero-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    letter-spacing: 3px;
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #e0e0e0;
+}
+
+.btn-instagram {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.btn-instagram:hover {
+    background-color: #52796f;
+    color: #ffffff;
+}
+
+/* --- SECCIÓN MENÚ  --- */
+.menu-section {
+    padding: 5rem 5%;
+    background-color: #f4f4f4;
+}
+
+.menu-alert {
+    background-color: #52796f;
+    color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 4px;
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+    text-align: center;
+}
+
+.menu-alert p {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* Cards en Blanco */
+.product-card {
+    background-color: #ffffff; 
+    border: 1px solid #e0e0e0; /* Bordes grises */
+    border-top: 4px solid #52796f; /* Toque Verde superior */
+    padding: 2rem;
+    border-radius: 6px;
+    width: 350px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.product-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: #1a1a1a;
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+}
+
+.product-card ul {
+    list-style: none;
+}
+
+.product-card li {
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+    color: #4a4a4a; /* Texto Gris Oscuro */
+}
+
+.product-card li strong {
+    color: #52796f; /* Resaltados en Verde */
+}
+
+/* Card Destacada (Brunch) */
+.highlighted {
+    background-color: #5279529c;
+    border-top: 4px solid #2f3e46;
+}
+
+.highlighted h3, .highlighted li {
+    color: #ffffff !important;
+    border-color: rgba(255,255,255,0.2);
+}
+
+/* Card Store */
+.store-card {
+    position: relative;
+    border-top-color: #2f3e46;
+}
+
+.badge {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background-color: #e76f51;
+    color: #fff;
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.box-notice {
+    display: block;
+    margin-top: 1.5rem;
+    font-style: italic;
+    color: #888;
+}
+
+/* --- SECCIÓN RESEÑAS --- */
+.reviews-section {
+    padding: 5rem 5%;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('assets/clientes.jpg') no-repeat center center/cover;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.review-card {
+    background-color: #f9f9f9;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: inset 0 0 0 1px #e0e0e0;
+}
+
+.stars {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.review-card p {
+    font-style: italic;
+    color: #444;
+    margin-bottom: 1.2rem;
+}
+
+.review-card h4 {
+    color: #52796f;
+    font-size: 0.95rem;
+}
+
+/* --- SECCIÓN CONTACTO --- */
+.contact-section {
+    padding: 5rem 5%;
+    background-color: #f4f4f4;
+}
+
+.contact-container {
+    display: flex;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    flex: 1;
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    background-color: #fcfcfc;
+}
+
+.btn-submit {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #52796f;
+}
+
+.contact-media {
+    flex: 1.2;
+}
+
+.contact-media h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.sucursales-flex {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.sucursal-card {
+    flex: 1;
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+.sucursal-card h4 {
+    margin-bottom: 0.2rem;
+    color: #1a1a1a;
+}
+
+.sucursal-card p {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 0.8rem;
+}
+
+.iframe-container {
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* --- FOOTER --- */
+.main-footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 2.5rem;
+    font-size: 0.9rem;
+}
+
+/* --- DISEÑO RESPONSIVO --- */
+@media (max-width: 992px) {
+    .contact-container {
+        flex-direction: column;
+    }
+    .sucursales-flex {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .navbar ul {
+        gap: 1rem;
+    }
+    .hero-content h2 {
+        font-size: 2.8rem;
+    }
+    .tagline {
+        font-size: 1.2rem;
+    }
+}
