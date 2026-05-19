@@ -144,8 +144,8 @@ body {
 /* Cards en Blanco */
 .product-card {
     background-color: #ffffff; 
-    border: 1px solid #e0e0e0; /* Bordes grises */
-    border-top: 4px solid #52796f; /* Toque Verde superior */
+    border: 1px solid #e0e0e0;
+    border-top: 4px solid #52796f;
     padding: 2rem;
     border-radius: 6px;
     width: 350px;
@@ -168,16 +168,16 @@ body {
 .product-card li {
     margin-bottom: 0.8rem;
     font-size: 0.95rem;
-    color: #4a4a4a; /* Texto Gris Oscuro */
+    color: #4a4a4a;
 }
 
 .product-card li strong {
-    color: #52796f; /* Resaltados en Verde */
+    color: #52796f;
 }
 
 /* Card Destacada (Brunch) */
 .highlighted {
-    background-color: #5279529c;
+    background-color: #52796f;
     border-top: 4px solid #2f3e46;
 }
 
@@ -215,6 +215,10 @@ body {
 .reviews-section {
     padding: 5rem 5%;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('assets/clientes.jpg') no-repeat center center/cover;
+}
+
+.reviews-section .section-title {
+    color: #ffffff;
 }
 
 .reviews-grid {
@@ -379,8 +383,4 @@ body {
     .tagline {
         font-size: 1.2rem;
     }
-}
-
-.reviews-section .section-title {
-    color: #ffffff;
 }
